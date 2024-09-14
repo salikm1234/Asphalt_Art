@@ -43,14 +43,14 @@ for(int count = 0; count < 2; count++) {
 
 public void top_left_corner(){
   //Will paint the top left corner of the background
-  paint(m_color2);
+  paint(color2);
   move();
-  paint(m_color2);
+  paint(color2);
   turnAround();
   move();
   turnLeft();
   move();
-  paint(m_color2);
+  paint(color2);
   reset();
 }
 
@@ -60,26 +60,26 @@ public void right_outline(){
   while(canMove()){
     move();
   }
-  paint(m_color2);
+  paint(color2);
   turnAround();
   move();
-  paint(m_color2);
+  paint(color2);
   turnAround();
   move();
   turnRight();
-  row(8, m_color2);
+  row(8, color2);
   reset();
 }
 
   
 public void one_eye(){
   //method prints L shape of the eye and returns to starting point
-  paint(m_color2);
+  paint(color2);
   move();
-  paint(m_color2);
+  paint(color2);
   turnLeft();
   move();
-  paint(m_color2);
+  paint(color2);
   turnAround();
   move();
   turnRight();
@@ -112,7 +112,7 @@ public void legs(){
   turnLeft();
   for(int count = 0; count < 3; count++) {
     move();
-    paint(m_color2);
+    paint(color2);
     move();
   } 
   reset();
